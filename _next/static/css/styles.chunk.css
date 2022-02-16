@@ -1,0 +1,219 @@
+.input-range__slider {
+  appearance: none;
+  background: #3f51b5;
+  border: 1px solid #3f51b5;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  margin-left: -0.5rem;
+  margin-top: -0.65rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 1rem; }
+  .input-range__slider:active {
+    transform: scale(1.3); }
+  .input-range__slider:focus {
+    box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2); }
+  .input-range--disabled .input-range__slider {
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    transform: none; }
+
+.input-range__slider-container {
+  transition: left 0.3s ease-out; }
+
+.input-range__label {
+  color: #aaaaaa;
+  font-family: "Helvetica Neue", san-serif;
+  font-size: 0.8rem;
+  transform: translateZ(0);
+  white-space: nowrap; }
+
+.input-range__label--min,
+.input-range__label--max {
+  bottom: -1.4rem;
+  position: absolute; }
+
+.input-range__label--min {
+  left: 0; }
+
+.input-range__label--max {
+  right: 0; }
+
+.input-range__label--value {
+  position: absolute;
+  top: -1.8rem; }
+
+.input-range__label-container {
+  left: -50%;
+  position: relative; }
+  .input-range__label--max .input-range__label-container {
+    left: 50%; }
+
+.input-range__track {
+  background: #eeeeee;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out; }
+  .input-range--disabled .input-range__track {
+    background: #eeeeee; }
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%; }
+
+.input-range__track--active {
+  background: #3f51b5; }
+
+.input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%; }
+
+/*# sourceMappingURL=index.css.map */
+.input-range {
+  width: 94%;
+  left: 3%;
+}
+
+.slider-age .input-range {
+  width: 100% !important;
+  left: 0 !important;
+}
+
+.input-range > span {
+    display: none;
+}
+
+.input-range__track {
+  background: #b8b8b8;
+  height: 2px;
+  border-radius: 0px;
+}
+
+.input-range__track--active {
+    background:#6d6f72;
+}
+
+.input-range__slider {
+
+    background: #f39200;
+    border: 4px solid #ffbb54;  
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -12px;
+    width: 20px;
+}
+
+/* .input-range__label-container {
+    left: 0; 
+} */
+
+.input-range__label-container {  
+    bottom: 1px;
+}
+
+.radio input[type='radio'] {
+    display: none;
+    /*removes original button*/
+  }
+  
+  .radio label:before {
+    /*styles outer circle*/
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid #b8b8b8;
+    background-color: transparent;
+  }
+  
+  .radio label {
+    position: relative;
+  }
+  
+  .radio label input[type='radio']:checked+span {
+    /*styles inside circle*/
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    display: block;
+    background-color: #f39200;
+  }  
+  
+.button {
+    position: relative;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button:after {
+    content: "";
+    background: #e6a94a;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+  
+.wrapper-input {
+  position: relative;
+}
+
+.icon-down, .icon-up {
+  color: #f39200;
+}
+
+.icon-down:hover, .icon-up:hover {
+  cursor: pointer;
+}
+
+.wrapper-input .icon-down {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  padding-right: 2%;
+}
+
+.wrapper-input .icon-up {
+  position: absolute;
+  right: 0px;
+  bottom: 1px;
+  padding-left: 2%;
+}
+
+.input-radio {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=styles.chunk.css.map*/
